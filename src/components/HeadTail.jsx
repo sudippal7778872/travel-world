@@ -25,15 +25,8 @@ const HeadTail = () => {
         Type: Yup.string().required("Please select value from dropdown."),
     });
 
-    const onSubmit = (values, props,event) => {
-        console.log(event)
-        let t = values.Type
-        // console.log(values.Type);
-        if (values.Type) {
-            data.push(t)
-            console.log(data)
-        }
-        
+    const onSubmit = (values, props) => {
+        console.log(values) 
     }
     const handleReset = (resetForm) => {
         resetForm();
@@ -45,9 +38,6 @@ const HeadTail = () => {
             )
         })
     }
-    useMemo(() => {
-        
-    },[data])
 
     return (
         <div style={{ height: '90vh' }}>
