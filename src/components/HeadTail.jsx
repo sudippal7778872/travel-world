@@ -97,12 +97,7 @@ const HeadTail = () => {
                 )}
             </Formik>
             <Stack>
-                {data.map((d, index) => {
-                    return (
-                        <h1 key={index}>{d}</h1>
-
-                    )
-                })}
+                {}
             </Stack>
         </div>
     )
